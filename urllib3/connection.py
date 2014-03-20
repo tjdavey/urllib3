@@ -116,6 +116,7 @@ class HTTPSConnection(HTTPConnection):
                                 timeout=timeout,
                                 source_address=source_address)
 
+        self._protocol = "https"
         self.key_file = key_file
         self.cert_file = cert_file
 
